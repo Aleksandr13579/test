@@ -1,0 +1,8 @@
+apiVersion: v1/beta
+kind: Service
+metatdata:
+  name: test
+  labels:
+    app: test
+spec:
+  hosts:
