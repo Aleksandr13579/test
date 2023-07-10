@@ -1,0 +1,27 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata: 
+  name: kubia
+  namespace: server
+  labels:
+    app: server
+    category: main
+spec:
+  replicas: 3
+  selector:
+    app: server
+  strategy:
+    rollingUpdate: 
+      maxUnavaible: 0
+  containers:
+    - image: docaleks123/server
+      name: server
+      redenessProbe:
+        httpGet:
+          path: /
+          port: 8080
+      livenessProbe:
+        periodSecond: 5
+        httpGet:
+          path: /
+          port: 8080
