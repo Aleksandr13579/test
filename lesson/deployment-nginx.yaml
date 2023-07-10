@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: nginx
+      app: nginx
+  template:
+    metadata:
+      labels:
+        name: nginx
+        app: nginx
+    spec:
+      containers:
+      - name: kubia
+        image: nginx:1.16.1 
+        ports:
+        - containerPort: 80 
+
