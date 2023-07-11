@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: ssd-monitor
+spec:
+  selector:
+    matchLabels:
+      app: ssd-monitor
+  template:
+    metadata:
+      labels:
+        app: ssd-monitor
+    spec:
+      nodeSelector:
+        disk: ssd
+      containers:
+      - name: monitor
+        image: luksa/ssd-monitor
+        resources:
+          requests:
+            memory: 128Mi
+            cpu: 150m
+          limits:
+            memory: 256Mi
+            cpu: 300m
+
