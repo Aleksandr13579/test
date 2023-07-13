@@ -2,12 +2,10 @@ apiVersion: apps/v1beta1
 kind: Deployment
 metadata: 
   name: kubia
-  namespace: server
   labels:
-    app: server
-    category: main
+    app: kubia
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     app: server
   strategy:
