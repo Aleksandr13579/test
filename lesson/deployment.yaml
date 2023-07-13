@@ -16,5 +16,26 @@ spec:
       - name: kubia
         image: luksa/kubia
         ports:
-        - containerPort: 8080 
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: 150m
+            memory: 300Mi
+          requests:
+            cpu: 100m
+            memory: 200Mi 
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 35
+          failureThreshold: 3
+          periodSeconds: 5
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          periodSeconds: 5
+          initialDelaySeconds: 40
+          failureThreshold: 3
 
