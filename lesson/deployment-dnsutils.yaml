@@ -15,8 +15,8 @@ spec:
       containers:
       - name: dnsutils
         image: tutum/dnsutils
-        command: ["bin/bash"]
-        args: ["sleep infinity"]
+        command: ["bin/sh"]
+        args: ["-c", "sleep infinity"]
         ports:
         - containerPort: 8080
         resources:
