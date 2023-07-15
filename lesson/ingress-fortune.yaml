@@ -1,19 +1,13 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-test
+  name: fortune
 spec:
   rules:
-  - host: kubia.example.com
-    http:
-      paths:
-      - backend:
-          service:
-            name: kubia
-            port:
-              number: 80
-        path: /
-        pathType: Prefix
   - host: fortune.example.com
     http:
       paths:
@@ -26,7 +20,6 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - kubia.example.com
     - fortune.example.com
     secretName: tls-secret
 
