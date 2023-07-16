@@ -1,2 +1,3 @@
-kubeadm join 192.168.11.128:6443 --token ookv76.widcs3m7eynlj83q \
-	--discovery-token-ca-cert-hash sha256:28f4fb121d63d9b6cc72aec3c4fc1191ccfea1a8c7a29f0f6d9340f2fc6ed155 
+kubeadm join 192.168.11.126:5443 --token ykmho0.9648olce5neevmb2 \
+	--discovery-token-ca-cert-hash sha256:c70a38958e1615459619df2b44d7c401594f69ebea3c83d5258510cd52bade26 
+
