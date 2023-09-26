@@ -1,0 +1,10 @@
+,Åcön'œW˜®ÊØ∞ä≈èé‹?]"d¯,`?HTTP/2.0 200 OK
+Content-Length: 482
+Audit-Id: 2a1039da-7117-4181-87df-54943c578365
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Wed, 31 May 2023 14:01:01 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 2c6ca211-a9b2-4599-817f-4519ee031a13
+X-Kubernetes-Pf-Prioritylevel-Uid: b240012a-764f-4dd5-9330-4770737aab61
+
+{"kind":"APIResourceList","apiVersion":"v1","groupVersion":"extensions.istio.io/v1alpha1","resources":[{"name":"wasmplugins","singularName":"wasmplugin","namespaced":true,"kind":"WasmPlugin","verbs":["delete","deletecollection","get","list","patch","create","update","watch"],"categories":["istio-io","extensions-istio-io"],"storageVersionHash":"mM+Qow77fbg="},{"name":"wasmplugins/status","singularName":"","namespaced":true,"kind":"WasmPlugin","verbs":["get","patch","update"]}]}

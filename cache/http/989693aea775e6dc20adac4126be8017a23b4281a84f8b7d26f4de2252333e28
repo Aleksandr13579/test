@@ -1,0 +1,10 @@
+åY¡®ÑØ+Íì§“ùéMdZ^IË›m’Í=¥×ö‡ôîHTTP/2.0 200 OK
+Content-Length: 302
+Audit-Id: 8bee34ef-5d3a-4155-a500-ecd2888c18ad
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Thu, 13 Jul 2023 20:49:53 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 34013499-9d3e-4157-b27c-92549fcca02d
+X-Kubernetes-Pf-Prioritylevel-Uid: 9faa0986-a12c-4883-9c41-650b59351242
+
+{"kind":"APIResourceList","apiVersion":"v1","groupVersion":"discovery.k8s.io/v1","resources":[{"name":"endpointslices","singularName":"","namespaced":true,"kind":"EndpointSlice","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"storageVersionHash":"Nx3SIv6I0mE="}]}

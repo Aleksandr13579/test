@@ -1,0 +1,10 @@
+C'(ﬂ+ÉÿœÅÓ&ß«ÿ´—Mâ4ª4¸Wî	[£HTTP/2.0 200 OK
+Content-Length: 504
+Audit-Id: dfff5853-15ff-447a-a405-1b97d531972f
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Wed, 31 May 2023 14:01:01 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 2c6ca211-a9b2-4599-817f-4519ee031a13
+X-Kubernetes-Pf-Prioritylevel-Uid: b240012a-764f-4dd5-9330-4770737aab61
+
+{"kind":"APIResourceList","apiVersion":"v1","groupVersion":"telemetry.istio.io/v1alpha1","resources":[{"name":"telemetries","singularName":"telemetry","namespaced":true,"kind":"Telemetry","verbs":["delete","deletecollection","get","list","patch","create","update","watch"],"shortNames":["telemetry"],"categories":["istio-io","telemetry-istio-io"],"storageVersionHash":"d44J/hig0n8="},{"name":"telemetries/status","singularName":"","namespaced":true,"kind":"Telemetry","verbs":["get","patch","update"]}]}

@@ -1,0 +1,10 @@
+ˆ–`Åfšß&„#t$t9ÈE8püô¾7 OÏ¼Q6EÜÉHTTP/2.0 200 OK
+Content-Length: 472
+Audit-Id: 4f43c1c3-0b5b-4950-bfd7-b3b8ecef9c48
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Wed, 31 May 2023 14:01:01 GMT
+X-Kubernetes-Pf-Flowschema-Uid: 2c6ca211-a9b2-4599-817f-4519ee031a13
+X-Kubernetes-Pf-Prioritylevel-Uid: b240012a-764f-4dd5-9330-4770737aab61
+
+{"kind":"APIResourceList","apiVersion":"v1","groupVersion":"install.istio.io/v1alpha1","resources":[{"name":"istiooperators","singularName":"istiooperator","namespaced":true,"kind":"IstioOperator","verbs":["delete","deletecollection","get","list","patch","create","update","watch"],"shortNames":["iop","io"],"storageVersionHash":"PrVcyWYRXSk="},{"name":"istiooperators/status","singularName":"","namespaced":true,"kind":"IstioOperator","verbs":["get","patch","update"]}]}
